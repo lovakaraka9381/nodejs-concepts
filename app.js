@@ -17,7 +17,6 @@ app.use((req, res, next) => {
   );
   next();
 });
-
 //uncatch errors
 process.on("uncaughtException", (err) => {
   logger.error(err);
